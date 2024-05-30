@@ -73,7 +73,11 @@
             <div class="pb-1">Age</div>
           </div>
           <div class="col-sm-8">
-            <div class="pb-1 text-secondary" id="age">{getAge()}</div>
+            <div class="pb-1 text-secondary" id="age"></div>
+            <script>
+              var age = getAge();
+              document.getElementById('age').innerText = age;
+            </script>
           </div>
           <div class="col-sm-4">
             <div class="pb-1">Email</div>
