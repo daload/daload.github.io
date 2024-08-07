@@ -1,5 +1,4 @@
 $(function () {
-
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
@@ -13,16 +12,18 @@ $(function () {
 
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
-
             $.ajax({
-                url: "./contact.php",
-                type: "POST",
+                url: "https://formspree.io/f/xwkzedre",
+                method: "POST",
+                crossDomain: true,
                 data: {
                     name: name,
+                    _replyto: email,
                     email: email,
-                    subject: subject,
+                    _subject: subject,
                     message: message
                 },
+                dataType:"json",
                 cache: false,
                 success: function () {
                     $('#success').html("<div class='alert alert-success'>");
