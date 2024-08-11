@@ -12,7 +12,7 @@
 
 
     // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
+    $(".smooth-scroll").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             
