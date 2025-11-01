@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>David Lopez - Home</title>
+    <title>David Lopez - Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 
-    <link href="assets/ico/favicon.ico" rel="icon">
+	<link href="assets/ico/favicon.ico" rel="icon">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -37,10 +37,10 @@
 			<h1 id="colorlib-logo"><a href="index.html">daload<span>.</span></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li class="colorlib-active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="projects.html">Personal Projects</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="colorlib-active"><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -55,26 +55,58 @@
 			</div>
 		</aside> <!-- END COLORLIB-ASIDE -->
 		<div id="colorlib-main">
-			<div class="hero-wrap hero-wrap-2 js-fullheight" data-stellar-background-ratio="1">
-				<div class="overlay"></div>
-				<div class="js-fullheight d-flex justify-content-center align-items-center">
-					<div class="col-md-8 text text-center">
-						<div class="img mb-4" style="background-image: url(images/author.png);"></div>
-						<div class="desc">
-							<h2 class="subheading">Hello I'm</h2>
-							<h1 class="mb-4">David Lopez</h1>
-							<p class="mb-4">I am a Software Engineer and Mobile Developer. I focus on turning ideas into practical digital tools that work smoothly and make sense. I care about clean, maintainable code, clear architecture, and solutions that stay reliable as they grow.</p>
-							<ul class="ftco-social mt-3">
-                <li class="ftco-animate"><a href="https://www.linkedin.com/in/david-l-adell/"><span class="icon-linkedin"></span></a></li>
-                <li class="ftco-animate"><a href="https://github.com/daload"><span class="icon-github"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/daload.27/"><span class="icon-instagram"></span></a></li>
-              </ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+			<section class="ftco-section contact-section">
+	      <div class="container">
+	        <div class="row d-flex mb-5 contact-info">
+	          <div class="col-md-12 mb-4">
+	            <h2 class="h4 font-weight-bold">Contact Information</h2>
+	          </div>
+	          <div class="w-100"></div>
+	          <div class="col-md-3">
+	            <p><span>City: </span>Barcelona, Spain</p>
+	          </div>
+	          <div class="col-md-3">
+	            <p><span>Email: </span> <a href="mailto:david.l.adell11@gmail.com">david.l.adell11@gmail.com</a></p>
+	          </div>
+	          <div class="col-md-3">
+	            <p><span>Website: </span> <a href="https://daload.github.io">daload.github.io</a></p>
+	          </div>
+	        </div>
+	        <div class="row block-9">
+	          <div class="col-md-9">
+				<div id="success"></div>
+	            <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/f/xwkzedre" method="POST">
+	              <div class="control-group">
+	                <input type="text" name="name" class="form-control p-4" id="name" placeholder="Your Name"
+						required="required" data-validation-required-message="Please enter your name">
+					<p class="help-block text-danger"></p>
+	              </div>
+	              <div class="control-group">
+	                <input type="email" name="email" class="form-control p-4" id="email" placeholder="Your Email"
+                    	required="required" data-validation-required-message="Please enter your email" />
+					<p class="help-block text-danger"></p>
+	              </div>
+	              <div class="control-group">
+	                <input type="text" name="subject" class="form-control p-4" id="subject" placeholder="Subject"
+						required="required" data-validation-required-message="Please enter a subject" />
+                    <p class="help-block text-danger"></p>
+	              </div>
+	              <div class="control-group">
+					<textarea class="form-control py-3 px-4" rows="7" cols="30" id="message" name="message" placeholder="Message"
+						required="required" data-validation-required-message="Please enter your message"></textarea>
+					<p class="help-block text-danger"></p>
+	              </div>
+	              <div class="control-group">
+	                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+	              </div>
+	            </form>
+	          
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -94,9 +126,10 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+	<script src="mail/contact.js"></script>
+  
     
   </body>
 </html>
